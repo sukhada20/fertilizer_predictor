@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 
 # Load and preprocess dataset (replace with your dataset path)
-data = pd.read_csv('/content/drive/MyDrive/UntitledFolder/FertilizerPrediction.csv')
+data = pd.read_csv('FertilizerPrediction.csv')
 X = data[['Temparature', 'Humidity ', 'Moisture', 'Soil Type', 'Crop Type', 'Nitrogen', 'Potassium', 'Phosphorous']]
 y = data['Fertilizer Name']
 X = pd.get_dummies(X, columns=['Soil Type', 'Crop Type'], drop_first=True)
