@@ -31,8 +31,8 @@ st.title("Fertilizer Recommendation System")
 st.write("Get personalized fertilizer recommendations based on your soil and crop information.")
 
 # Input fields
-soil_type = st.selectbox("Select Soil Type:", ["Sandy", "Loamy", "Clay", "Silty"])
-crop_type = st.selectbox("Select Crop Type:", ["Wheat", "Rice", "Corn", "Soybean"])
+soil_type = st.selectbox("Select Soil Type:", ["Sandy", "Loamy", "Clayey", "Red", "Black"])
+crop_type = st.selectbox("Select Crop Type:", ["Maize", "Sugarcane", "Cotton", "Tobacco", "Paddy", "Barley", "Wheat", "Millets", "Oil Seeds", "Pulses", "Ground Nuts"])
 temperature = st.number_input("Temperature (°C):", min_value=-10, max_value=50, value=25, step=1)
 humidity = st.number_input("Humidity (%):", min_value=0, max_value=100, value=50, step=1)
 moisture = st.number_input("Moisture (%):", min_value=0, max_value=100, value=30, step=1)
